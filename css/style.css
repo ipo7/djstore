@@ -81,17 +81,6 @@ body {
   min-width: 375px;
 }
 
-.temp-block {
-  height: 91px;
-  min-width: 100vw;
-}
-
-@media screen and (max-width: 375px) {
-  .temp-block {
-    height: 114px;
-  }
-}
-
 .container {
   width: 1160px;
   max-width: 100vw;
