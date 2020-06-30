@@ -473,10 +473,6 @@ body {
      object-fit: contain;
 }
 
-.menu__icon_active {
-  display: none;
-}
-
 .email {
   font-weight: 600;
   font-size: 13px;
@@ -933,7 +929,7 @@ body {
           align-items: flex-start;
   width: 100%;
   overflow: hidden;
-  max-height: calc(100vh - 220px);
+  height: calc(100vh - 220px);
   overflow-y: auto;
 }
 

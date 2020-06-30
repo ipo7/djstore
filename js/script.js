@@ -108,17 +108,36 @@ $('.header__menu .menu__item').on('click touchend', function(e) {
   $(this).toggleClass('menu__item_active');
 });
 
+
+
+$(document).ready(function() {
+  $('.header__menu_disable .menu__item .menu__icon_active').toggle();
+  $('.header__menu_disable .menu__item:first').addClass('menu__item_active');
+  $('.header__menu_disable .menu__item:first img:first').toggle();
+  $('.header__menu_disable .menu__item:first img:last').toggle();
+
+});
+
+
 $('.header__menu_disable .menu__item').on('click touchend', function(e) {
   e.stopPropagation();
   e.preventDefault();
   $('.header__menu_disable .menu__item').removeClass('menu__item_active');
-  // $('.header__menu_disable .menu__icon').removeClass('menu__icon_active');
-  // $('.header__menu_disable .menu__item:first-child img').addClass('menu__icon_active').css('display', 'block');
-  // event.preventDefault();
-  $('img', this).toggleClass('menu__icon_active');
+  $('.header__menu_disable .menu__item .menu__icon').show();
+  $('.header__menu_disable .menu__item .menu__icon_active').hide();
+
+  $('.menu__icon', this).hide();
+  $('.menu__icon_active', this).show();
+
+
   $(this).toggleClass('menu__item_active');
 
 });
+
+
+
+
+
 
 $('.header__callback').on('click touchend', function(e) {
   e.stopPropagation();
