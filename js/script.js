@@ -106,6 +106,12 @@ $('.header__callback').on('click touchend', function(e) {
   $('.callback-form:not(.callback-form_succses)').toggle(200);
 });
 
+$('.basic-block__button-group .button_transparent').on('click touchend', function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  $('.callback-form:not(.callback-form_succses)').toggle(200);
+});
+
 $('.callback-form .callback-form__exit').on('click touchend', function(e) {
   e.stopPropagation();
   e.preventDefault();
