@@ -157,7 +157,7 @@ $(document).click(function(e) {
     return;
   }
   $('.pop-up').hide();
-  // $('.speakers__unit .speakers__focus').css({
-  //   'background': 'url("../img/circle.png") center/cover'
-  // });
+  $('.speakers__unit .speakers__focus').css({
+    'background': 'url("./img/circle.png") center/cover'
+  });
 });
