@@ -64,23 +64,23 @@ $('.video-conference__basic-block-container').slick({
 
 
 
-// $('.speakers__unit .speakers__focus').hover(
-//   function(e) {
-//     e.stopPropagation();
-//     e.preventDefault();
-//     $(this).css({
-//       'background': 'url("../img/circle_active.png") center/cover'
-//     });
-//   },
-//
-//   function(e) {
-//     e.stopPropagation();
-//     e.preventDefault();
-//     $(this).css({
-//       'background': 'url("../img/circle.png") center/cover'
-//     });
-//   }
-// );
+$('.speakers__unit .speakers__focus').hover(
+  function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $(this).css({
+      'background': 'url("../img/circle_active.png") center/cover'
+    });
+  },
+
+  function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $(this).css({
+      'background': 'url("../img/circle.png") center/cover'
+    });
+  }
+);
 
 
 
@@ -157,7 +157,7 @@ $(document).click(function(e) {
     return;
   }
   $('.pop-up').hide();
-  $('.speakers__unit .speakers__focus').css({
-    'background': 'url(".././img/circle.png") center/cover'
-  });
+  // $('.speakers__unit .speakers__focus').css({
+  //   'background': 'url("../img/circle.png") center/cover'
+  // });
 });
