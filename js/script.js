@@ -31,15 +31,15 @@ $('.video-conference__basic-block-container').slick({
 
 
 
-// $('.speakers__unit .speakers__focus:first').on('click touchend', function(e) {
-//   e.stopPropagation();
-//   e.preventDefault();
-//   $(this).css({
-//     'background': 'url("../img/circle_active.png") center/cover'
-//   });
-//
-//   $('.speakers__unit .speakers__pop-up:first').toggle(200);
-// });
+$('.speakers__unit .speakers__focus:first').on('click touchend', function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  $(this).css({
+    'background': 'url("../img/circle_active.png") center/cover'
+  });
+
+  $('.speakers__unit .speakers__pop-up:first').toggle(200);
+});
 
 
 
@@ -64,23 +64,23 @@ $('.speakers__unit .speakers__focus:last').on('click touchend', function(e) {
 
 
 
-$('.speakers__unit .speakers__focus').hover(
-  function(e) {
-    e.stopPropagation();
-    e.preventDefault();
-    $(this).css({
-      'background': 'url("../img/circle_active.png") center/cover'
-    });
-  },
-
-  function(e) {
-    e.stopPropagation();
-    e.preventDefault();
-    $(this).css({
-      'background': 'url("../img/circle.png") center/cover'
-    });
-  }
-);
+// $('.speakers__unit .speakers__focus').hover(
+//   function(e) {
+//     e.stopPropagation();
+//     e.preventDefault();
+//     $(this).css({
+//       'background': 'url("../img/circle_active.png") center/cover'
+//     });
+//   },
+//
+//   function(e) {
+//     e.stopPropagation();
+//     e.preventDefault();
+//     $(this).css({
+//       'background': 'url("../img/circle.png") center/cover'
+//     });
+//   }
+// );
 
 
 
