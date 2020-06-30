@@ -158,6 +158,6 @@ $(document).click(function(e) {
   }
   $('.pop-up').hide();
   $('.speakers__unit .speakers__focus').css({
-    'background': 'url("/img/circle.png") center/cover'
+    'background': 'url("../../img/circle.png") center/cover'
   });
 });
