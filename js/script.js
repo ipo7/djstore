@@ -69,7 +69,7 @@ $('.speakers__unit .speakers__focus').hover(
     e.stopPropagation();
     e.preventDefault();
     $(this).css({
-      'background': 'url("../img/circle_active.png") center/cover'
+      'background': 'url("./img/circle_active.png") center/cover'
     });
   },
 
@@ -77,7 +77,7 @@ $('.speakers__unit .speakers__focus').hover(
     e.stopPropagation();
     e.preventDefault();
     $(this).css({
-      'background': 'url("../img/circle.png") center/cover'
+      'background': 'url("./img/circle.png") center/cover'
     });
   }
 );
