@@ -55,18 +55,18 @@ $('.speakers__unit .speakers__focus:last').on('click touchend', function(e) {
 
 $('.speakers__unit .speakers__focus').hover(
   function(e) {
-    // e.stopPropagation();
-    // e.preventDefault();
+    e.stopPropagation();
+    e.preventDefault();
     $(this).css({
-      'background': 'url("./img/circle_active.png") center/cover'
+      'background': 'url("../img/circle_active.png") center/cover'
     });
   },
 
   function(e) {
-    // e.stopPropagation();
-    // e.preventDefault();
+    e.stopPropagation();
+    e.preventDefault();
     $(this).css({
-      'background': 'url("./img/circle.png") center/cover'
+      'background': 'url("../img/circle.png") center/cover'
     });
   }
 );
