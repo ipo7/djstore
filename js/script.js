@@ -26,15 +26,23 @@ $('.video-conference__basic-block-container').slick({
   fade: true,
 });
 
-$('.speakers__unit .speakers__focus:first').on('click touchend', function(e) {
-  e.stopPropagation();
-  e.preventDefault();
-  $(this).css({
-    'background': 'url("../img/circle_active.png") center/cover'
-  });
 
-  $('.speakers__unit .speakers__pop-up:first').toggle(200);
-});
+
+
+
+
+// $('.speakers__unit .speakers__focus:first').on('click touchend', function(e) {
+//   e.stopPropagation();
+//   e.preventDefault();
+//   $(this).css({
+//     'background': 'url("../img/circle_active.png") center/cover'
+//   });
+//
+//   $('.speakers__unit .speakers__pop-up:first').toggle(200);
+// });
+
+
+
 
 $('.speakers__unit .speakers__focus:last').on('click touchend', function(e) {
   e.stopPropagation();
@@ -51,6 +59,9 @@ $('.speakers__unit .speakers__focus:last').on('click touchend', function(e) {
     $('.speakers__unit .speakers__pop-up:last').toggle(200);
   }
 });
+
+
+
 
 
 $('.speakers__unit .speakers__focus').hover(
@@ -71,6 +82,9 @@ $('.speakers__unit .speakers__focus').hover(
   }
 );
 
+
+
+
 $('.speakers__unit .speakers__pop-up .pop-up__exit').on('click touchend', function(e) {
   e.stopPropagation();
   e.preventDefault();
@@ -80,6 +94,11 @@ $('.speakers__unit .speakers__pop-up .pop-up__exit').on('click touchend', functi
 // console.log($('.speakers__unit .speakers__focus').css('background'));
   $(this).parent().parent().toggle(200);
 });
+
+
+
+
+
 
 $('.header__menu .menu__item').on('click touchend', function(e) {
   e.stopPropagation();
