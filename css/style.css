@@ -933,10 +933,6 @@ body {
   overflow-y: auto;
 }
 
-.header__menu_disable div:first-child img {
-  margin-right: 18px;
-}
-
 .header__menu_disable div:first-child {
   padding-top: 6px;
 }
