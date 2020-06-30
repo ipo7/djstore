@@ -74,10 +74,10 @@ $('.speakers__unit .speakers__focus').hover(
 $('.speakers__unit .speakers__pop-up .pop-up__exit').on('click touchend', function(e) {
   e.stopPropagation();
   e.preventDefault();
-  // $('.speakers__unit .speakers__focus').css({
-  //   'background': 'url("../img/circle.png") center/cover'
-  // });
-
+  $('.speakers__unit .speakers__focus').css({
+    'background': 'url("../img/circle.png") center/cover'
+  });
+// console.log($('.speakers__unit .speakers__focus').css('background'));
   $(this).parent().parent().toggle(200);
 });
 
