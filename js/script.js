@@ -14,7 +14,8 @@ $(document).ready(function() {
     variableWidth: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    asNavFor: '.video-conference__basic-block-container'
+    asNavFor: '.video-conference__basic-block-container, .video-conference__background-container',
+
   });
 });
 
@@ -26,6 +27,13 @@ $('.video-conference__basic-block-container').slick({
   fade: true,
 });
 
+$('.video-conference__background-container').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  fade: true,
+});
 
 
 
@@ -115,6 +123,8 @@ $(document).ready(function() {
   $('.header__menu_disable .menu__item:first').addClass('menu__item_active');
   $('.header__menu_disable .menu__item:first img:first').toggle();
   $('.header__menu_disable .menu__item:first img:last').toggle();
+
+  // $('.video-conference__background:last').hide();
 
 });
 
