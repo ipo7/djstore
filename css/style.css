@@ -108,9 +108,6 @@ body {
   height: 407px;
   border-radius: 16px;
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -137,6 +134,34 @@ body {
     width: 343px;
     height: 346px;
     padding: 47px 0 0 14px;
+  }
+}
+
+.callback-form label[for="yourname"] {
+  position: absolute;
+  top: 43%;
+  left: 8%;
+  color: red;
+}
+
+@media screen and (max-width: 375px) {
+  .callback-form label[for="yourname"] {
+    font-size: 10px;
+    top: 163px;
+  }
+}
+
+.callback-form label[for="telephone"] {
+  position: absolute;
+  top: 61%;
+  left: 8%;
+  color: red;
+}
+
+@media screen and (max-width: 375px) {
+  .callback-form label[for="telephone"] {
+    font-size: 10px;
+    top: 221px;
   }
 }
 
@@ -297,6 +322,10 @@ body {
 
 .callback-form__checkbox {
   opacity: 0;
+}
+
+.callback-form__checkbox:invalid ~ .callback-form__checkmark {
+  border: 1px solid red;
 }
 
 .callback-form__checkbox:checked ~ .callback-form__checkmark {

@@ -124,7 +124,7 @@ $(document).ready(function() {
   $('.header__menu_disable .menu__item:first img:first').toggle();
   $('.header__menu_disable .menu__item:first img:last').toggle();
 
-  // $('.video-conference__background:last').hide();
+  $('input[name="telephone"]').inputmask("+7(999)999-99-99");
 
 });
 
@@ -161,6 +161,44 @@ $('.basic-block__button-group .button_transparent').on('click touchend', functio
   $('.callback-form:not(.callback-form_succses)').toggle(200);
 });
 
+
+$(function() {
+  $('.callback-form').validate({
+    rules: {
+      yourname: {
+
+        required: true,
+
+      },
+      telephone: {
+        minlength: 7,
+        required: true,
+        // digits: true,
+      },
+      check: {
+        required: true
+      },
+    },
+    messages: {
+      yourname: {
+        required: "Поле обязательно для заполнения",
+        minlength: "Имя должно содержать более 3-х символов"
+      },
+      telephone: {
+        digits: "Допустимы только цифры",
+        minlength: "Минимальное кол-во символов: 7",
+        required: "Поле обязательно для заполнения"
+      },
+      check: {
+        required: "",
+      },
+    },
+
+
+  });
+});
+
+
 $('.callback-form .callback-form__exit').on('click touchend', function(e) {
   e.stopPropagation();
   e.preventDefault();
@@ -170,8 +208,15 @@ $('.callback-form .callback-form__exit').on('click touchend', function(e) {
 $('.callback-form__button').on('click touchend', function(e) {
   e.stopPropagation();
   e.preventDefault();
-  $(this).parent().toggle();
-  $('.callback-form_succses').css("display", "flex");
+  let a = this;
+  let b = $('.callback-form');
+  console.log(b.valid());
+  if (b.valid()) {
+    $(a).parent().toggle();
+    $('.callback-form_succses').css("display", "flex");
+  } else {
+    return;
+  }
 });
 
 $('.callback-form_succses .callback-form__button').on('click touchend', function(e) {
