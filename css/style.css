@@ -994,9 +994,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  overflow: hidden;
   height: calc(100vh - 220px);
-  overflow-y: auto;
 }
 
 .header__menu_disable div:first-child {
@@ -1132,12 +1130,38 @@ body {
 .video-conference__background-container {
   position: absolute;
   z-index: 0;
+  width: 100vw;
 }
 
 .video-conference__background-container .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.video-conference__background {
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 624px;
+}
+
+@media screen and (max-width: 930px) {
+  .video-conference__background {
+    height: 424px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .video-conference__background {
+    height: 460px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .video-conference__background {
+    height: 540px;
+  }
 }
 
 .video-conference__container {
@@ -1164,19 +1188,19 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    height: 724px;
+    height: 424px;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .video-conference__container {
-    height: 774px;
+    height: 460px;
   }
 }
 
 @media screen and (max-width: 485px) {
   .video-conference__container {
-    height: 840px;
+    height: 540px;
   }
 }
 
@@ -1344,7 +1368,7 @@ body {
   }
 }
 
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 930px) {
   .video-conference__slider-block {
     display: none;
   }
@@ -1353,12 +1377,6 @@ body {
 .video-conference__slider-block .slick-list {
   overflow: hidden;
   max-width: 720px;
-}
-
-@media screen and (max-width: 930px) {
-  .video-conference__slider-block .slick-list {
-    max-width: 370px;
-  }
 }
 
 .video-conference__slider-block .slick-track {
