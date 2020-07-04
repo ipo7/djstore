@@ -563,7 +563,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding-right: 30px;
+  right: 2%;
   cursor: pointer;
 }
 
@@ -575,7 +575,6 @@ body {
 
 @media screen and (max-width: 375px) {
   .burger {
-    padding-right: 18px;
     width: 18px;
     height: 16px;
   }
@@ -588,9 +587,11 @@ body {
   height: 3px;
   background-color: #2B2D3A;
   border-radius: 2px;
-  -webkit-transition: all 400ms;
-  -o-transition: all 400ms;
-  transition: all 400ms;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  -o-transition: transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 @media screen and (max-width: 375px) {
@@ -637,15 +638,14 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
   text-align: right;
-  padding-right: 30px;
+  right: 8%;
   cursor: pointer;
-  -webkit-transition: all 3000ms;
-  -o-transition: all 3000ms;
-  transition: all 3000ms;
+  -webkit-transition: -webkit-transform 3000ms;
+  transition: -webkit-transform 3000ms;
+  -o-transition: transform 3000ms;
+  transition: transform 3000ms;
+  transition: transform 3000ms, -webkit-transform 3000ms;
 }
 
 @media screen and (max-width: 770px) {
@@ -656,7 +656,6 @@ body {
 
 @media screen and (max-width: 375px) {
   .burger-disable {
-    padding-right: 20px;
     width: 18px;
     height: 16px;
   }
