@@ -994,7 +994,6 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  height: calc(100vh - 220px);
 }
 
 .header__menu_disable div:first-child {
