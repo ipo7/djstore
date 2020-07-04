@@ -25,6 +25,7 @@ $('.video-conference__basic-block-container').slick({
   arrows: false,
   dots: false,
   fade: true,
+  asNavFor: '.video-conference__background-container, .video-conference__slider-block',
 });
 
 $('.video-conference__background-container').slick({

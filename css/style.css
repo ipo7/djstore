@@ -1041,13 +1041,40 @@ body {
 }
 
 @media screen and (max-width: 920px) {
+  .header__email .email__title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .header__email:before {
+    top: -12px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 820px) {
   .header__email {
     display: none;
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 820px) {
   .header__callback {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .header__callback:before {
+    top: -9px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .header .callback__number,
+  .header .callback__title {
     display: none;
   }
 }
