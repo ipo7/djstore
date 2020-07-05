@@ -1465,7 +1465,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 375px;
+  min-width: 370px;
 }
 
 .speakers__foto {
@@ -1484,7 +1484,7 @@ body {
 .speakers__image {
   width: 50vw;
   height: 620px;
-  min-width: 188px;
+  min-width: 183px;
   min-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1492,7 +1492,7 @@ body {
 
 @media screen and (max-width: 1919px) {
   .speakers__image {
-    height: calc((100vw - 375px)/(1919 - 375) * (620 - 200) + 200px);
+    height: calc((100vw - 375px)/(1919 - 375) * (620 - 195) + 195px);
   }
 }
 
