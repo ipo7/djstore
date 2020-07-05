@@ -670,7 +670,7 @@ body {
 
 @media all and (max-width: 375px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .burger-disable {
-    right: 7px;
+    right: 15px;
   }
 }
 
