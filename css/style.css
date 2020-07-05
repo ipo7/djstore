@@ -75,6 +75,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  * {
+    overflow-x: hidden;
+  }
+}
+
 body {
   font-family: 'Montserrat', 'Raleway';
   font-size: 400;
