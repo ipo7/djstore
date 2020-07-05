@@ -1039,6 +1039,12 @@ body {
   left: 0;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .header__menu_disable .menu__icon_min {
+    height: 19px;
+  }
+}
+
 .header__menu_disable .menu__item_active {
   font-weight: 600;
   color: #397DFF;
