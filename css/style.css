@@ -650,7 +650,7 @@ body {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .burger-disable {
-    right: 15px;
+    right: 20px;
   }
 }
 
@@ -665,6 +665,12 @@ body {
     right: 32px;
     width: 18px;
     height: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) and (-ms-high-contrast: active) {
+  .burger-disable {
+    right: 7px;
   }
 }
 
