@@ -668,7 +668,7 @@ body {
   }
 }
 
-@media screen and (max-width: 375px) and (-ms-high-contrast: active) {
+@media all and (max-width: 375px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .burger-disable {
     right: 7px;
   }
