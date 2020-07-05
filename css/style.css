@@ -126,13 +126,19 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: fixed;
-  top: 15%;
+  top: 20%;
   margin: auto;
   left: 0;
   right: 0;
   z-index: 1000;
   color: #2B2D3A;
   padding: 38px 0 48px 40px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .callback-form {
+    top: 10%;
+  }
 }
 
 @media screen and (max-width: 375px) {
