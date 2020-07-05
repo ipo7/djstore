@@ -648,6 +648,12 @@ body {
   transition: transform 3000ms, -webkit-transform 3000ms;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .burger-disable {
+    right: 30px;
+  }
+}
+
 @media screen and (max-width: 770px) {
   .burger-disable {
     display: block;
